@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions</title>
+    <link rel="stylesheet" href="tablas.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo2.png" alt="TechNova">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Administrador</a>
+                    <ul class="submenu">
+                        <li><a href="tabla_personal.html">Personal</a></li>
+                        <li><a href="tabla_usuarios.html">Usuarios</a></li>
+                        <li><a href="tabla_Roles.html">Roles</a></li>
+                        <li><a href="tabla_permisos.html">Permisos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Servicio al Cliente</a>
+                    <ul class="submenu2">
+                        <li><a href="tabla_Ventas.html">Ventas</a></li>
+                        <li><a href="tabla_detalleVenta.html">Detalle de Ventas</a></li>
+                        <li><a href="tabla_promociones.html">Promociones</a></li>
+                    </ul>
+                </li>
+                <li><a href="tabla_clientes.html">Clientes</a></li>
+                <li><a href="tabla_productos.html">Productos</a></li>
+                <li><a href="tabla_compra.html">Compras</a></li>
+                <li><a href="tabla_proveedor.html">Proveedores</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>TechNova Solutions</h1>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2><i class="fas fa-edit"></i> Registro de Promociones</h2>
+            <form action="tabla_promociones.php" method="post">
+                <table>
+                    <tr>
+                        <td>Descripcion:</td>
+                        <td><input type="text" name="descripcion" required></td>
+                    </tr>
+                    <tr>
+                        <td>Descuento:</td>
+                        <td><input type="text" name="Descuento" required></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha Inicio:</td>
+                        <td><input type="text" name="fecha inicio" required></td>
+                    </tr>
+                    <tr>
+                        <td>Fecha Fin:</td>
+                        <td><input type="text" name="fecha fin" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Registrar"></td>
+                        <td><input type="reset" value="Limpiar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- Data Section -->
+        <div class="data-section">
+            <h2>Listado de Promociones</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripcion</th>
+                        <th>Descuento</th>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Fin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán dinámicamente las filas desde PHP -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
